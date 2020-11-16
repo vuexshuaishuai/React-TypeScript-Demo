@@ -1,0 +1,8 @@
+.fragment-table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+.fragment-table td {
+  border: 1px solid #999;
+}

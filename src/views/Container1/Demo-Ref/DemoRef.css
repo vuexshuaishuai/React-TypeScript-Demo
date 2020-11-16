@@ -1,0 +1,12 @@
+.ant-input{
+    width:320px;
+    margin-bottom:20px;
+}
+.refs-btns{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.refs-btns>.ant-btn:last-child{
+    margin-left: 20px;
+}

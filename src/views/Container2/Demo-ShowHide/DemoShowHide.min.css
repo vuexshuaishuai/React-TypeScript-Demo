@@ -1,0 +1,1 @@
+.inner{width:420px;height:260px;background:white}.inner>.inner-header{width:100%;display:flex;justify-content:space-between;align-items:center;height:44px;border-bottom:1px solid gainsboro;color:#333;font-size:16px;padding:0 12px}.inner>.inner-header p{margin:0}.inner>.inner-header .anticon{cursor:pointer}
