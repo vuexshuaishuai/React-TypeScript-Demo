@@ -7,6 +7,8 @@ import DemoRef from "./views/Container1/Demo-Ref/DemoRef"
 import Selected from "./views/Container1/select/Selected"
 import DemoFragment from "./views/Container1/Demo-Fragment/DemoFragment"
 import DemoShowHide from "./views/Container2/Demo-ShowHide/DemoShowHide"
+import DemoUseState from "./views/Container2/Demo-UseState/DemoUseState"
+import DemoRedux from "./views/Container3/Demo-Redux/DemoRedux"
 import "./App.css"
 
 const { Header, Content } = Layout;
@@ -53,11 +55,13 @@ export default class App extends React.Component<any,IAppProps, IAppState> {
                   padding: 24,
                   minHeight: 280,
                 }}>
-                    <Route path="/" component={DemoRef} exact></Route>
+                    <Route path="/" component={DemoRef} exact></Route> 
                     <Route path="/Home/Demo-Ref" component={DemoRef}></Route>
                     <Route path="/Home/Demo-Select" component={Selected}></Route>
                     <Route path="/Home/Demo-Fragment" component={DemoFragment}></Route>
                     <Route path="/Data/Demo-ShowHide" component={DemoShowHide}></Route> 
+                    <Route path="/Data/Demo-UseState" component={DemoUseState}></Route>
+                    <Route path="/Redux/Demo-Redux" component={DemoRedux}></Route>
               </Content>
             </Layout>
           </Layout>

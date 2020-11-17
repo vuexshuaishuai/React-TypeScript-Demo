@@ -1,3 +1,12 @@
 .ant-layout-sider{
     height: 100%;
 }
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon{
+    font-size: 18px;
+}
+.anticon>span{
+    font-size: 18px;
+}
+.ant-menu{
+    font-size: 15px;
+}

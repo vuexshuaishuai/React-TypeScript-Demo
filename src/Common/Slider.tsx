@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Layout, Menu } from "antd";
-import { HomeOutlined, CarryOutOutlined, } from "@ant-design/icons";
+import { HomeOutlined, CarryOutOutlined, ClusterOutlined, } from "@ant-design/icons";
 import { withRouter, } from "react-router-dom"
 import "./Slider.css"
 
@@ -34,6 +34,10 @@ class Slider extends Component<any, Props, State> {
                         </SubMenu>
                         <SubMenu key="sub2" icon={<CarryOutOutlined />} title="菜单容器 2">
                             <Menu.Item key="6" onClick={ () => this.onNavigate("/Data/Demo-ShowHide")}>弹框显示隐藏</Menu.Item>
+                            <Menu.Item key="7" onClick={ () => this.onNavigate("/Data/Demo-UseState")}>useState操作展示</Menu.Item>
+                        </SubMenu>
+                        <SubMenu key="sub3" icon={<ClusterOutlined />} title="存储仓库">
+                            <Menu.Item key="8" onClick={ () => this.onNavigate("/Redux/Demo-Redux")}>Redux操作</Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>

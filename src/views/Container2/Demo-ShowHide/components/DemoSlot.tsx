@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import ReactDOM from "react-dom"
 
 const modalRoot: HTMLElement | null = document.getElementById('modal-root');
@@ -18,7 +18,10 @@ class DemoSlot extends Component<any, any> {
         }
     }
     render() {
+        //第一种写法
         return ReactDOM.createPortal(this.props.children, this.el)
+        
+        //第二种写法:
         // return (
         //     <div>
         //         {this.props.children}
