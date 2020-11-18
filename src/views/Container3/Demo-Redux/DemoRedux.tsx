@@ -13,6 +13,7 @@ interface State {
 
 class DemoRedux extends Component<any, Props, State> {
     public textInput:React.RefObject<Input> = React.createRef();
+    public countInput: React.RefObject<Input> = React.createRef();
 
     public ChangeName = () => {
         if(this.textInput.current){
@@ -20,17 +21,37 @@ class DemoRedux extends Component<any, Props, State> {
             this.props.changeName(Content)
         }
     }
+    // 加
+    public CountIncrease = () => {
+        this.props.CountIncrease();
+    }
+    // 减
+    public CountReduce = () => {
+        this.props.CountReduce();
+    }
+    // 
+    public CallbackDisabled = () => {
+
+    }
+    componentDidMount(){
+        
+    }
     render() {
-        console.log(this.props)
         return (
             <div className="demo-redux">
-                <p>输入框的值：{this.props.name}</p>
-                <Input placeholder="请输入内容" ref={this.textInput}></Input>
-                <div>
-                    <Button type="primary" onClick={() => this.ChangeName()}>输出</Button>
+                {/* Demo 1  */}
+                <div className="redux-input">
+                    <p>输入框的值：{this.props.name}</p>
+                    <Input placeholder="请输入内容" ref={this.textInput}></Input>
+                    <div>
+                        <Button type="primary" onClick={() => this.ChangeName()}>输出</Button>
+                    </div>
                 </div>
-                <div>
-
+                {/* Demo 2  */}
+                <div className="demo-count">
+                    <Button type="primary" onClick={() => this.CountReduce()} disabled={this.props.count === 0}>-</Button>
+                    <Input placeholder="数值" ref={this.countInput} value={this.props.count}></Input>
+                    <Button type="primary" onClick={() => this.CountIncrease()}>+</Button>
                 </div>
             </div>
         )

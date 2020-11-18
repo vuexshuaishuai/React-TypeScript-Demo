@@ -6,6 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "experimentalDecorators":true,  //开启装饰器
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

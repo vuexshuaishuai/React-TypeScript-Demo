@@ -1,0 +1,34 @@
+.demo-mobx{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mobx-demo1{
+    width:400px;
+    height: 200px;
+    border:1px solid #f1f1f1;
+    background: #f1f1f1;
+    padding:20px;
+    box-sizing: border-box;
+    p{
+        font-size: 16px;
+    }
+    button{
+        margin-right: 20px;
+    }
+}
+.mobx-box{
+    width:400px;
+    height: 200px;
+    border:1px solid #f1f1f1;
+    background: #f1f1f1;
+    padding:20px;
+    box-sizing: border-box;
+    margin-left:40px;
+    p{
+        font-size: 16px;
+    }
+    button{
+        margin-right: 20px;
+    }
+}
