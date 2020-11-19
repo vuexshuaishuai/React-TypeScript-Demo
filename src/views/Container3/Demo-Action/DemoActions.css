@@ -1,24 +1,27 @@
-.demo-mobx {
+.demo-action {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
-.demo-mobx > div {
-  margin-bottom: 40px;
+.demo-action > div {
   width: 400px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   background: #f1f1f1;
   padding: 20px;
   box-sizing: border-box;
   margin-right: 40px;
 }
 
-.demo-mobx > div p {
+.demo-action > div > p {
   font-size: 16px;
 }
 
-.demo-mobx > div button {
+.demo-action > div > p > span {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.demo-action button {
   margin-right: 20px;
 }

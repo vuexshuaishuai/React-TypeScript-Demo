@@ -39,6 +39,8 @@ class Slider extends Component<any, Props, State> {
                         <SubMenu key="sub3" icon={<ClusterOutlined />} title="存储仓库">
                             <Menu.Item key="8" onClick={ () => this.onNavigate("/Redux/Demo-Redux")}>Redux操作</Menu.Item>
                             <Menu.Item key="9" onClick={ () => this.onNavigate("/Mobx/Demo-Mobx")}>Mobx操作</Menu.Item>
+                            <Menu.Item key="10" onClick={ () => this.onNavigate("/Mobx/Demo-Mobx-Store")}>computed操作</Menu.Item>
+                            <Menu.Item key="11" onClick={ () => this.onNavigate("/Mobx/Demo-Action")}>action操作</Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>

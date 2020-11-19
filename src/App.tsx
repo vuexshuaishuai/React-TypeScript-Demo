@@ -10,6 +10,8 @@ import DemoShowHide from "./views/Container2/Demo-ShowHide/DemoShowHide"
 import DemoUseState from "./views/Container2/Demo-UseState/DemoUseState"
 import DemoRedux from "./views/Container3/Demo-Redux/DemoRedux"
 import DemoMobx from "./views/Container3/Demo-Mobx/DemoMobx"
+import DemoMobxStore from "./views/Container3/Demo-Mobx-Store/DemoMobxStore"
+import DemoAction from "./views/Container3/Demo-Action/DemoAction"
 import "./App.css"
 
 const { Header, Content } = Layout;
@@ -64,6 +66,8 @@ export default class App extends React.Component<any,IAppProps, IAppState> {
                     <Route path="/Data/Demo-UseState" component={DemoUseState}></Route>
                     <Route path="/Redux/Demo-Redux" component={DemoRedux}></Route>
                     <Route path="/Mobx/Demo-Mobx" component={DemoMobx}></Route>
+                    <Route path="/Mobx/Demo-Mobx-Store" component={DemoMobxStore}></Route>
+                    <Route path="/Mobx/Demo-Action" component={DemoAction}></Route>
               </Content>
             </Layout>
           </Layout>
